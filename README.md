@@ -27,5 +27,5 @@ open broswer
  
  hello laravel
  
-opren document
+open document
  http://localhost/doc
