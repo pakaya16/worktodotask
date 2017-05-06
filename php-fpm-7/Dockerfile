@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y \
 	nodejs \
 	npm \
 	vim \
+	git \
+	zip \
 #	git-all \
 #	google-chrome-stable \
 	xvfb \
