@@ -4,6 +4,7 @@ install docker
 Install Docker Compose
  link https://docs.docker.com/compose/install/
 
+use port 3306, 80
 
 ```bash
 git clone https://github.com/pakaya16/worktodotask.git
@@ -25,7 +26,7 @@ php artisan migrate:refresh --seed
 open broswer
  http://localhost/
  
- hello laravel
+ see text laravel
  
 open document
  http://localhost/doc
