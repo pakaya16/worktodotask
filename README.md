@@ -4,16 +4,28 @@ install docker
 Install Docker Compose
  link https://docs.docker.com/compose/install/
 
-$ git clone https://github.com/pakaya16/worktodotask.git
 
+```bash
+$ git clone https://github.com/pakaya16/worktodotask.git
 $ cd worktodotask
 $ docker-conpose up -d
 $ docker ps
+```
+**copy dockerId**
 
 **_345a3a6b9831_**        worktodotask_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      worktodotask_phpfpm_1
 
-copy dockerId
-
+```bash
 $ docker exec -it < dockerID > /bin/bash
 $ cd laravel
 $ composer install
+$ php artisan migrate:refresh --seed
+
+```
+open broswer
+ http://localhost/
+ 
+ hello laravel
+ 
+opren document
+ http://localhost/doc
