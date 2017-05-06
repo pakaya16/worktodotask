@@ -44,7 +44,13 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        return parent::render($request, $exception);
+      if($request->segment(1) == 'api')
+        return response()->json([
+          'code'    => '99',
+          'message' => 'Unsupported get request. Please read the API documentation at ' . url('doc')]
+          , 404);
+
+      return parent::render($request, $exception);
     }
 
     /**
