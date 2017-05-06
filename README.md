@@ -9,7 +9,7 @@ use port 3306, 80
 ```bash
 git clone https://github.com/pakaya16/worktodotask.git
 cd worktodotask
-docker-conpose up -d
+docker-compose up -d
 docker ps
 ```
 **copy dockerId**
