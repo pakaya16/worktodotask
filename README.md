@@ -12,7 +12,7 @@ cd worktodotask
 docker-compose up -d
 docker ps
 ```
-**copy dockerId**
+**copy ContainerID**
 
 **_345a3a6b9831_**        worktodotask_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      worktodotask_phpfpm_1
 
