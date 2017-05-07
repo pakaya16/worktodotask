@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y \
 	&& docker-php-ext-install intl \
 	&& docker-php-ext-install opcache \
 	&& docker-php-ext-install mbstring \
-	&& curl -sS https:\/\/getcomposer.org\/installer | php -- --install-dir=/usr/local/bin --filename=composer
+	&& curl -sS https:\/\/getcomposer.org\/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+	&& composer create-project --prefer-dist laravel/laravel
 #	&& wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
 #	&& sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 

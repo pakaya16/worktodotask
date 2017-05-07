@@ -1,3 +1,4 @@
 redis/data
 mysql/databases
 log/
+.idea/
