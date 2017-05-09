@@ -17,7 +17,7 @@ docker ps
 **_345a3a6b9831_**        worktodotask_phpfpm   "docker-php-entryp..."   4 minutes ago       Up 4 minutes        9000/tcp                      worktodotask_phpfpm_1
 
 ```bash
-docker exec -it < dockerID > /bin/bash
+docker exec -it < ContainerID > /bin/bash
 cd laravel
 composer install
 php artisan migrate:refresh --seed
